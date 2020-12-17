@@ -21,3 +21,29 @@ header .navbar {
 header .navbar img {
   width: 50px;
 }
+
+main {
+  display: flex;
+  width: 1000px;
+  margin: auto;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .poster {
+  background: #000;
+  flex-basis: 200px;
+  padding: 15px 30px;
+  margin: 30px;
+  text-align: center;
+}
+main .poster img {
+  height: 200px;
+}
+main .poster h3 {
+  font-size: 16px;
+}
+main .poster h3,
+main .poster p {
+  margin: 15px 0;
+}

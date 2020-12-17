@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .poster{
+        background: #000;
+        flex-basis: 200px;
+        padding: 15px 30px;
+        margin: 30px;
+        text-align: center;
+
+        img{
+            height: 200px;
+        }
+
+        h3{
+            font-size: 16px;
+        }
+
+        h3,
+        p{
+            margin: 15px 0;
+        }
+    }
+}
