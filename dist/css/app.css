@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  background: #182d3d;
+}
+
+header {
+  padding: 20px;
+  background: #132431;
+}
+header .navbar {
+  width: 1170px;
+  margin: auto;
+}
+header .navbar img {
+  width: 50px;
+}
