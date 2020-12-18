@@ -1,6 +1,4 @@
-<?php 
-    include './partials/database.php'
-?>
+<?php require_once './partials/database.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +31,10 @@
             </div>
         <?php } ?>       
     </main>
+
+
+    <!-- JS -->
+    <script src="./dist/js/app.js"></script>
 
 </body>
 </html>
