@@ -14422,11 +14422,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
-  data: {},
+  data: {
+    database: []
+  },
   created: function created() {
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/user?ID=12345').then(function (response) {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('http://localhost:3000/php-ajax-dischi/partials/script.php').then(function (response) {
       // handle success
-      console.log(response.data);
+      // console.log(response.data)
+      _this.database = response.data;
     })["catch"](function (error) {
       // handle error
       console.log(error);

@@ -4,13 +4,17 @@ import axios from 'axios';
 const app =new Vue({
     el: '#app',
 
-    data: {},
+    data: {
+        database: [],
+    },
 
     created() {
-        axios.get('/user?ID=12345')
+        axios.get('http://localhost:3000/php-ajax-dischi/partials/script.php')
         .then(response => {
             // handle success
-            console.log(response.data);
+            // console.log(response.data)
+            this.database = response.data;
+
         })
         .catch(error => {
             // handle error
